@@ -6,9 +6,29 @@
     <link rel="stylesheet" href="css/style.css">
     <title>TypeScript</title>
 </head>
-<body>
+<body class="bg-gray-800 text-white flex min-h-screen flex-col">
     
+    <!-- header -->
+    <header>
+        <nav class="flex items-center justify-between px-8">
+            <h1 class="text-lg font-semibold">typescript</h1>
+            <ul class="flex items-center">
+                <a class="hover:bg-gray-600/20 w-fit h-fit p-4" href="">Home</a>
+                <a class="hover:bg-gray-600/20 w-fit h-fit p-4" href="">About</a>
+                <a class="hover:bg-gray-600/20 w-fit h-fit p-4" href="">Services</a>
+            </ul>
+        </nav>
+    </header>
+    <!-- main -->
+    <div class="flex-1 grid place-content-center">
+        <h1 class="text-7xl font-extrabold ">TypeScript</h1>        
+    </div>
+    <!-- footer -->
+    <footer class="mx-auto container grid place-content-center">
+        <p class="text-center">Copyright &copy; <span id="year"></span></p>
+    </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/generics.js"></script>
 </body>
 </html>
