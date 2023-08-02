@@ -34,3 +34,17 @@ for(let item in income){
     const val = income[item as keyof Incomes];
     console.log(`${item} : ${val}`)
 }
+
+type StudentStream = 'name' | 'dept' | 'age' | 'image';
+type StudentInterface = Record<StudentStream, string>;
+
+const person : StudentInterface = {
+    name: 'ashik',
+    dept: 'cse',
+    age: '30',
+    image: 'n/a'
+}
+
+for(const item in person){
+    console.log(`${item} : ${person[item as keyof StudentInterface]}`);
+}

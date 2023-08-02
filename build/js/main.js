@@ -17,3 +17,12 @@ for (let item in income) {
     const val = income[item];
     console.log(`${item} : ${val}`);
 }
+const person = {
+    name: 'ashik',
+    dept: 'cse',
+    age: '30',
+    image: 'n/a'
+};
+for (const item in person) {
+    console.log(`${item} : ${person[item]}`);
+}
